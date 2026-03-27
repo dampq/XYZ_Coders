@@ -1,0 +1,27 @@
+{
+  "name": "hackathon",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"tsx watch src/backend/server.ts\"",
+    "dev:frontend": "vite",
+    "dev:backend": "tsx watch src/backend/server.ts",
+    "build": "vite build",
+    "server": "tsx src/backend/server.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "openai": "^6.33.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.14",
+    "tsx": "^4.21.0"
+  }
+}
