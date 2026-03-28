@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | MemBrain</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="app-frame">
+        <nav class="navbar">
+          <a class="brand" href="index.html"><span class="brand-mark">M</span><span>MemBrain</span></a>
+          <div class="nav-links">
+            <a class="nav-link active" href="dashboard.html">Dashboard</a>
+            <a class="nav-link" href="decision.html">New Decision</a>
+            <a class="nav-link" href="debate.html">Debate</a>
+            <a class="nav-link" href="result.html">Final Output</a>
+          </div>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="auth.html">Profile</a>
+            <a class="btn btn-primary" href="decision.html">+ New Decision</a>
+          </div>
+        </nav>
+
+        <div class="layout">
+          <aside class="sidebar">
+            <div class="sidebar-card">
+              <div class="eyebrow">Quick Stats</div>
+              <h3>Decision velocity is climbing</h3>
+              <p>Faster rounds, stronger agreement, and fewer stalled decisions this week.</p>
+            </div>
+            <div class="sidebar-nav">
+              <a class="sidebar-link active" href="dashboard.html"><span>Past Decisions</span><strong>12</strong></a>
+              <a class="sidebar-link" href="decision.html"><span>New Debate</span><strong>+</strong></a>
+              <a class="sidebar-link" href="auth.html"><span>Profile</span><strong>></strong></a>
+            </div>
+          </aside>
+
+          <main class="content">
+            <div class="page-header">
+              <div>
+                <div class="eyebrow">Priority Page 04</div>
+                <h2>Decision Dashboard</h2>
+                <p>Pick up earlier debates, review consensus trends, and jump back into a new decision flow with one click.</p>
+              </div>
+              <div class="actions">
+                <a class="btn btn-primary" href="decision.html">+ New Decision</a>
+                <button class="btn btn-secondary">View Past Decisions</button>
+              </div>
+            </div>
+
+            <section class="stats-row">
+              <div class="card stat-card"><div class="eyebrow">Completed</div><h3>27 Decisions</h3><small>Up 18% from last month</small></div>
+              <div class="card stat-card"><div class="eyebrow">Average Agreement</div><h3>79%</h3><small>Across the last ten debates</small></div>
+              <div class="card stat-card"><div class="eyebrow">Fastest Resolution</div><h3>06:24 min</h3><small>Product strategy sync</small></div>
+            </section>
+
+            <section class="card panel-section" style="margin-top: 20px;">
+              <h3>Past Decisions List</h3>
+              <div class="decision-list">
+                <div class="decision-item"><div class="timeline-marker">A</div><div><strong>Should we launch the community campaign next month?</strong><p>82% agreement. Final answer recommends a pilot-first rollout.</p></div></div>
+                <div class="decision-item"><div class="timeline-marker">B</div><div><strong>How should we rebalance onboarding friction?</strong><p>74% agreement. Critics pushed for stronger measurement before simplification.</p></div></div>
+                <div class="decision-item"><div class="timeline-marker">C</div><div><strong>Do we keep the premium support tier?</strong><p>88% agreement. Experts and emotional agents aligned on a concierge-led repositioning.</p></div></div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Decision | MemBrain</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="app-frame">
+        <nav class="navbar">
+          <a class="brand" href="index.html"><span class="brand-mark">M</span><span>MemBrain</span></a>
+          <div class="nav-links">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+            <a class="nav-link active" href="decision.html">New Decision</a>
+            <a class="nav-link" href="debate.html">Debate</a>
+            <a class="nav-link" href="result.html">Final Output</a>
+          </div>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="dashboard.html">Back</a>
+            <a class="btn btn-primary" href="debate.html">Start Debate</a>
+          </div>
+        </nav>
+
+        <div class="layout">
+          <aside class="sidebar">
+            <div class="sidebar-card">
+              <div class="eyebrow">Setup Guide</div>
+              <h3>Shape the room before the agents begin</h3>
+              <p>Pick the right perspectives and difficulty level to balance speed, empathy, and rigor.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3>Recommended Mix</h3>
+              <div class="decision-list">
+                <div class="decision-item"><strong>Emotional + Technical</strong></div>
+                <div class="decision-item"><strong>Expert + Critic</strong></div>
+                <div class="decision-item"><strong>Intermediate mode</strong></div>
+              </div>
+            </div>
+          </aside>
+
+          <main class="content">
+            <div class="page-header">
+              <div>
+                <div class="eyebrow">Priority Page 02</div>
+                <h2>Decision Input</h2>
+                <p>Give your agents the core question, supporting notes, and a role mix that matches the kind of decision you need to make.</p>
+              </div>
+            </div>
+
+            <div class="main-grid two">
+              <section class="card panel-section">
+                <h3>Decision Brief</h3>
+                <div class="field-grid">
+                  <label>Question / Problem
+                    <textarea placeholder="Should we launch the new member community with a live onboarding sprint next month?"></textarea>
+                  </label>
+                  <label>Notes
+                    <textarea placeholder="Budget is capped, activation matters more than raw signups, and we only have two engineers available."></textarea>
+                  </label>
+                </div>
+              </section>
+
+              <section class="card panel-section">
+                <h3>AI Debate Configuration</h3>
+                <div class="field-grid">
+                  <div class="field-grid two">
+                    <label>Number of AIs
+                      <select>
+                        <option>2</option>
+                        <option>3</option>
+                        <option selected>4</option>
+                        <option>5</option>
+                      </select>
+                    </label>
+                    <label>Experience Level
+                      <select>
+                        <option>Beginner</option>
+                        <option selected>Intermediate</option>
+                        <option>Expert</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div>
+                    <div class="eyebrow" data-role-count>4 roles selected</div>
+                    <div class="checkbox-grid">
+                      <label class="check-card"><input type="checkbox" checked data-role-check /><span class="role-tag role-emotional">Emotional</span></label>
+                      <label class="check-card"><input type="checkbox" checked data-role-check /><span class="role-tag role-technical">Technical</span></label>
+                      <label class="check-card"><input type="checkbox" checked data-role-check /><span class="role-tag role-expert">Expert</span></label>
+                      <label class="check-card"><input type="checkbox" checked data-role-check /><span class="role-tag role-critic">Critic</span></label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn btn-primary" href="debate.html">Start Debate</a>
+                  <a class="btn btn-secondary" href="dashboard.html">Back</a>
+                </div>
+              </section>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

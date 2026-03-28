@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debate Room | MemBrain</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="app-frame">
+        <nav class="navbar">
+          <a class="brand" href="index.html"><span class="brand-mark">M</span><span>MemBrain</span></a>
+          <div class="nav-links">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+            <a class="nav-link" href="decision.html">New Decision</a>
+            <a class="nav-link active" href="debate.html">Debate</a>
+            <a class="nav-link" href="result.html">Final Output</a>
+          </div>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="dashboard.html">Back to Dashboard</a>
+            <a class="btn btn-primary" href="result.html">Skip to Result</a>
+          </div>
+        </nav>
+
+        <div class="layout">
+          <aside class="sidebar">
+            <div class="sidebar-card">
+              <div class="eyebrow">Live Session</div>
+              <h3>Launch a community growth campaign?</h3>
+              <p>4 agents, intermediate mode, evidence-based debate with a final consensus draft.</p>
+            </div>
+            <div class="sidebar-card">
+              <h3>Active Roles</h3>
+              <div class="card-grid">
+                <span class="role-tag role-emotional">Emotional</span>
+                <span class="role-tag role-technical">Technical</span>
+                <span class="role-tag role-expert">Expert</span>
+                <span class="role-tag role-critic">Critic</span>
+              </div>
+            </div>
+            <div class="sidebar-card">
+              <h3>Consensus</h3>
+              <div class="progress"><span style="width: 64%"></span></div>
+              <small>Current agreement after 9 exchanges</small>
+            </div>
+          </aside>
+
+          <main class="content">
+            <div class="page-header">
+              <div>
+                <div class="eyebrow">Priority Page 01</div>
+                <h2>Multi-agent Debate Room</h2>
+                <p>Different AI personas challenge the same decision from emotional, analytical, expert, and critical angles.</p>
+              </div>
+              <div class="actions">
+                <button class="btn btn-primary" data-toggle-debate>Pause Debate</button>
+                <button class="btn btn-secondary" data-skip-result>Skip to Result</button>
+              </div>
+            </div>
+
+            <section class="card chat-shell" data-debate-panel>
+              <div class="chat-toolbar">
+                <div class="chat-status">
+                  <span class="dot"></span>
+                  <strong data-status-text>Four agents actively debating</strong>
+                  <span class="role-tag role-personal">AI6 Synthesis Pending</span>
+                </div>
+                <div class="loader" aria-label="Loading"></div>
+              </div>
+
+              <div class="chat-area">
+                <article class="chat-bubble emotional left">
+                  <div class="chat-meta"><span class="role-tag role-emotional">Emotional</span><span>Round 1</span></div>
+                  <strong>Users will feel this immediately.</strong>
+                  <p>The campaign creates belonging fast, but only if the tone is warm and personal rather than overly corporate.</p>
+                </article>
+                <article class="chat-bubble technical right">
+                  <div class="chat-meta"><span class="role-tag role-technical">Technical</span><span>Round 2</span></div>
+                  <strong>Execution is feasible in two sprints.</strong>
+                  <p>We already have the automation hooks and analytics events. The main risk is fragmented onboarding copy.</p>
+                </article>
+                <article class="chat-bubble critic left">
+                  <div class="chat-meta"><span class="role-tag role-critic">Critic</span><span>Round 3</span></div>
+                  <strong>Engagement can mask weak retention.</strong>
+                  <p>If we launch without a clearer follow-up path, the campaign may inflate signups while lowering activation quality.</p>
+                </article>
+                <article class="chat-bubble expert right">
+                  <div class="chat-meta"><span class="role-tag role-expert">Expert</span><span>Round 4</span></div>
+                  <strong>Sequence matters more than scale.</strong>
+                  <p>Start with a small invite-only pilot, measure activation and community contribution, then expand based on cohort behavior.</p>
+                </article>
+                <article class="chat-bubble technical left">
+                  <div class="chat-meta"><span class="role-tag role-technical">Technical</span><span>Now typing</span></div>
+                  <div class="typing" aria-label="Typing animation"><span></span><span></span><span></span></div>
+                </article>
+              </div>
+
+              <div class="chat-footer">
+                <div style="flex: 1 1 auto;">
+                  <div class="stat-pill">Consensus Indicator <strong>64%</strong></div>
+                  <div class="progress"><span data-progress style="width: 64%"></span></div>
+                </div>
+                <div class="actions">
+                  <a class="btn btn-secondary" href="decision.html">Back</a>
+                  <a class="btn btn-primary" href="result.html">Start Debate</a>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
